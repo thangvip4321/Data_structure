@@ -8,18 +8,18 @@ orbs:
 jobs:
   one:
     docker:
-    -image: circleci/ruby:2.4.1
+    - image: circleci/ruby:2.4.1
     steps:
-    -checkout
-    -run: echo "a first welcome"
-    -run: sleep 15
+    - checkout
+    - run: echo "a first welcome"
+    - run: sleep 15
   two:
     docker:
-    -image: circleci/ruby:2.4.1
+    - image: circleci/ruby:2.4.1
     steps:
-    -checkout
-    -run: echo "another one"
-    -run: sleep 25
+    - checkout
+    - run: echo "another one"
+    - run: sleep 25
     
 workflows:
   # Name the workflow "welcome"
